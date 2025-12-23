@@ -45,6 +45,9 @@ Your network team is preparing Azure infrastructure for the first cloud workload
 
 A Resource Group is a logical container for Azure resources. All resources for Redwood Industries will be organized in one Resource Group for easy management and cleanup.
 
+> [!NOTE]
+> Do not block the pop-ups in your browser for the Azure portal!
+
 1. **Log in to Azure Portal:**
    - Navigate to <https://portal.azure.com>
    - Sign in with your Azure account credentials
@@ -139,7 +142,7 @@ The Virtual Network provides the private IP address space for all Azure resource
 7. **Wait for Deployment:**
    - Deployment typically takes 5-10 seconds
    - You'll see "Your deployment is complete" message
-   - Click **Got to resource**
+   - Click **Go to resource**
 
 ### Validation
 
@@ -248,8 +251,8 @@ The Internal subnet (also called Transit subnet) will host FortiGate's port2 int
    - **Subnet address range:** Enter `10.100.2.0/24`
    - Leave all other settings as default (None for NSG, Route table, etc.)
 
-4. **Save Subnet:**
-   - Click **Save** button
+4. **Add Subnet:**
+   - Click **Add** button
 
 ### Validation
 
@@ -289,8 +292,8 @@ The Protected subnet hosts your application workloads and VMs that require Forti
    - **Subnet address range:** Enter `10.100.3.0/24`
    - Leave all other settings as default
 
-4. **Save Subnet:**
-   - Click **Save** button
+4. **Add Subnet:**
+   - Click **Add** button
 
 ### Validation
 
@@ -401,6 +404,10 @@ Before moving to Lab 2, verify:
 ### Azure CLI Verification (Optional)
 
 For advanced users comfortable with Azure CLI:
+
+Open the Azure CLI
+
+![azure-cli](../az-101-lab2/images/troubleshoot.png)
 
 ```bash
 # Verify Resource Group

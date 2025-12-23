@@ -71,9 +71,13 @@ Azure Marketplace is where you find and deploy third-party solutions, including 
 - ✅ You're on the "**Create Single VM**" page
 - ✅ Tabs visible: Basics, Instance, Networking, Public IP, Advanced, Tags, Post Deployment Info, Review + create
 
-### Understanding BYOL vs. PAYG
+---
 
-**BYOL (Bring Your Own License) - What We're Using:**
+<details>
+
+<summary>💡 Understanding BYOL vs. PAYG</summary>
+
+### BYOL (Bring Your Own License) - What We're Using
 
 - You provide Fortinet license separately (FortiFlex token today)
 - Lower long-term cost (~40% savings over 3 years)
@@ -82,7 +86,7 @@ Azure Marketplace is where you find and deploy third-party solutions, including 
 
 ![step1.4-byol-screenshot](images/step1.4-byol.png)
 
-**PAYG (Pay As You Go) - Alternative:**
+### PAYG (Pay As You Go) - Alternative
 
 - License bundled into hourly Azure billing
 - No upfront licensing cost
@@ -90,6 +94,8 @@ Azure Marketplace is where you find and deploy third-party solutions, including 
 - Good for POCs and short-term testing
 
 ![step1.4-paygo-screenshot](images/step1.4-paygo.png)
+
+</details>
 
 ---
 
@@ -173,7 +179,7 @@ The Basics tab configures foundational VM settings: location, sizing, and admin 
 If deployment fails, check:
 
 | Error | Possible Cause | Solution |
-|-------|----------------|----------|
+| --- | --- | --- |
 | "Quota exceeded" | Not enough vCPU quota in region | Request quota increase via Azure Portal → Support |
 | "Subnet not available" | Subnet specified doesn't exist | Verify Lab 1 completed, check subnet names |
 | "IP address in use" | 10.100.2.4 already assigned | Check for other VMs in Internal-Subnet, use different IP or delete conflicting resource |
